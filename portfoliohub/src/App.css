@@ -1,3 +1,14 @@
+:root {
+  --bg: #282c34;
+  --main: #21DDF7;
+  --bgLight: #586a8e;
+}
+
+header, footer {
+  background: var(--bg);
+  color: var(--main);
+}
+
 .App {
   text-align: center;
 }
@@ -13,8 +24,8 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.containerWithSpinningLogo {
+  background: var(--bg);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
