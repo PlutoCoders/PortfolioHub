@@ -3,10 +3,14 @@ Using React to create a portfolio website
 
 ### Steps to Creating the Project
 - make sure you have node installed (check with node -v)
-- npm init -y (the following command does this automatically)
-or
+- npm init -y (the following command does this automatically though, so its not neccesary)
 - npx create-react-app portfoliohub (if there are errors, reload/trash your terminal)
 - - this will create your react structure (public, src, package.json, etc)
+- Check package.json for a default start script (then use it)
+- make sure to cd into your new react folder in order to run commands
+- npm start (to start the application)
+- ctrl click the local host link such as: "http://localhost:3000"
+- your default app will be running in the browser
 
 
 
