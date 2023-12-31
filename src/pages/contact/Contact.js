@@ -12,7 +12,7 @@ export default function Contact({logo}) {
                     <p style={{marginTop: 35}}>Contact</p>
                     </div>
                 </section>
-                <section id={`aboutMe`} className={`aboutMeContentSection flex alignCenter justifyCenter flexColumn`} style={{padding: 15}}>
+                <section id={`contact`} className={`contactContentSection flex alignCenter justifyCenter flexColumn`} style={{padding: 15}}>
                     <h2>Contact</h2>
                     <p>
                         This HTML file is a template.

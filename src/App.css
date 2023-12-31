@@ -82,6 +82,18 @@ section {
   min-height: 75vh;
 }
 
+.projects {
+  gap: 15px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.project {
+  border: 1px solid black;
+  min-height: 150px;
+}
+
 .plutoBGSection {
   background-size: cover !important;
   background-position: 50% 70% !important;

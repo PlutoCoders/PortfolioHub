@@ -12,7 +12,7 @@ export default function Resume({logo}) {
                     <p style={{marginTop: 35}}>Resume</p>
                     </div>
                 </section>
-                <section id={`aboutMe`} className={`aboutMeContentSection flex alignCenter justifyCenter flexColumn`} style={{padding: 15}}>
+                <section id={`resume`} className={`resumeContentSection flex alignCenter justifyCenter flexColumn`} style={{padding: 15}}>
                     <h2>Resume</h2>
                     <p>
                         This HTML file is a template.
