@@ -5,8 +5,29 @@
 }
 
 header, footer {
-  background: var(--bg);
   color: var(--main);
+}
+
+header {
+  padding: 15px 0;
+  margin-bottom: -52px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  min-height: 75vh;
+}
+
+.plutoBGSection {
+  background-size: cover !important;
+  background-position: 50% 70% !important;
+  background-repeat: no-repeat !important;
+  background: url(/public/pluto_background.png);
 }
 
 .App {
@@ -14,7 +35,7 @@ header, footer {
 }
 
 .App-logo {
-  height: 87px;
+  height: 55px;
   pointer-events: none;
 }
 
@@ -25,7 +46,6 @@ header, footer {
 }
 
 .containerWithSpinningLogo {
-  background: var(--bg);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
