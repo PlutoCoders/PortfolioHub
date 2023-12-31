@@ -28,8 +28,20 @@ a:hover {
   color: var(--main);
 }
 
+.mainColorLink {
+  color: var(--main);
+}
+
+.mainColorLink:hover {
+  color: white;
+}
+
 .flex {
   display: flex;
+}
+
+.flexColumn {
+  flex-direction: column;
 }
 
 .gap5 {
