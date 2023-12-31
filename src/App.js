@@ -6,13 +6,15 @@ import About from './pages/about/About';
 import Resume from './pages/resume/Resume';
 import Contact from './pages/contact/Contact';
 import Portfolio from './pages/portfolio/Portfolio';
-import { defaultProjects, getGithubData } from './helper';
+// Use line 10 when you want do a fresh github api call, and comment switch project/setProhect import
+// import { getGithubData } from './helper';
+import { projectsUsedAcrossApplication } from './helper';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
   // Store things in useState that you want to access across your application (or things that update)
-  let [projects, setProjects] = useState(defaultProjects);
-  // let [projects, setProjects] = useState(getGithubData() || defaultProjects);
+  // let [projects, setProjects] = useState(getGithubData());
+  let [projects, setProjects] = useState(projectsUsedAcrossApplication);
   
   return (
     <div className="App">

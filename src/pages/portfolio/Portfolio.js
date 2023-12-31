@@ -1,8 +1,8 @@
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
+import Project from '../../components/project/Project';
 
 export default function Portfolio({logo, projects}) {
-    console.log(`Projects`, projects);
     return (
         <>
             <Header />
@@ -15,19 +15,10 @@ export default function Portfolio({logo, projects}) {
                 </section>
                 <section id={`portfolio`} className={`portfolioContentSection flex alignCenter justifyCenter flexColumn`} style={{padding: 15}}>
                     <h2>Projects</h2>
-                    <div className={`projects`}>
-                        <div className={`project flex alignCenter justifyCenter flexColumn`}>
-                            <h3>Project 1</h3>
-                            <p>This HTML file is a template. If you open it directly in the browser, you will see an empty page.</p>
-                        </div>
-                        <div className={`project flex alignCenter justifyCenter flexColumn`}>
-                            <h3>Project 2</h3>
-                            <p>This HTML file is a template. If you open it directly in the browser, you will see an empty page.</p>
-                        </div>
-                        <div className={`project flex alignCenter justifyCenter flexColumn`}>
-                            <h3>Project 3</h3>
-                            <p>This HTML file is a template. If you open it directly in the browser, you will see an empty page.</p>
-                        </div>
+                    <div className={`projects flex justifySpaceBetween gap15`}>
+                        {projects && projects.length > 0 ? projects.map((project, projectIndex) => {
+                            return <Project key={projectIndex} project={project} />
+                        }) : <div className={`project flex alignCenter justifyCenter flexColumn w100`}>No Projects Found</div>}
                     </div>
                 </section>
             </main>

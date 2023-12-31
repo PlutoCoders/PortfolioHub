@@ -5,6 +5,8 @@ export const getGithubData = async () => {
     const repositories = JSON.parse(localStorage.getItem(`repositories`)) || [];
     const responseRepos = await fetch(repoURL);
     const response = await fetch(githubURL);
+
+    let projects = [];
   
     if (!response.ok || !responseRepos.ok) {
       console.log(`Fetch Error`);
@@ -30,11 +32,13 @@ export const getGithubData = async () => {
       console.log(`Gihub API Data`, gitUser);
       localStorage.setItem(`projects`, JSON.stringify(gitUser?.projects));
   
-      return gitUser?.projects;
+      projects = gitUser?.projects;
     };
+
+    return projects;
 }
 
-export const defaultProjects = [
+export const githubRaw = [
     {
         "name": "PortfolioHub",
         "owner": {
@@ -58,7 +62,11 @@ export const defaultProjects = [
             "site_admin": false
         },
         "url": "https://github.com/PlutoCoders/PortfolioHub",
-        "topics": [],
+        "topics": [
+            "api",
+            "javascript",
+            "react"
+        ],
         "date": "2023-12-28T00:18:04Z",
         "license": {
             "key": "mit",
@@ -67,8 +75,8 @@ export const defaultProjects = [
             "url": "https://api.github.com/licenses/mit",
             "node_id": "MDc6TGljZW5zZTEz"
         },
-        "updated": "2023-12-28T02:22:16Z",
-        "homepage": null,
+        "updated": "2023-12-31T04:38:34Z",
+        "homepage": "",
         "language": "JavaScript",
         "deployment": "https://api.github.com/repos/PlutoCoders/PortfolioHub/deployments",
         "description": "Using React"
@@ -726,4 +734,25 @@ export const defaultProjects = [
         "deployment": "https://api.github.com/repos/PlutoCoders/PlutoCoders/deployments",
         "description": "Config files for my GitHub profile."
     }
-]
+];
+
+export const customProjects = [
+    {
+        url: `#`,
+        name: `Project 1`,
+        description: `Project 1`,
+    },
+    {
+        url: `#`,
+        name: `Project 2`,
+        description: `Project 2`,
+        topics: [`Topic 1`, `Topic 2`],
+    },
+    {
+        url: `#`,
+        name: `Project 3`,
+        description: `Project 3`,
+    },
+];
+
+export const projectsUsedAcrossApplication = githubRaw;
