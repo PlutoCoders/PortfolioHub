@@ -5,18 +5,65 @@
 }
 
 header, footer {
+  padding: 15px;
   color: var(--main);
 }
 
 header {
-  padding: 15px 0;
-  margin-bottom: -52px;
+  margin-bottom: -57px;
+}
+
+footer {
+  color: black;
+  border-top: 1px solid black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: 150ms ease-in-out;
+}
+
+a:hover {
+  color: var(--main);
 }
 
 .flex {
   display: flex;
+}
+
+.gap5 {
+  grid-gap: 5px;
+}
+.gap10 {
+  grid-gap: 10px;
+}
+.gap15 {
+  grid-gap: 15px;
+}
+
+.alignCenter {
   align-items: center;
+}
+
+.justifyCenter {
   justify-content: center;
+}
+
+.justifySpaceBetween {
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 section {
@@ -27,7 +74,7 @@ section {
   background-size: cover !important;
   background-position: 50% 70% !important;
   background-repeat: no-repeat !important;
-  background: url(/public/pluto_background.png);
+  background: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, white), url(http://localhost:3000/static/media/pluto_background.8d10de451e85c7b022bd.png);
 }
 
 .App {

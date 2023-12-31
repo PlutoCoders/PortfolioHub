@@ -1,5 +1,5 @@
 export default function Footer() {
     return (
-        <footer>Footer</footer>
+        <footer>Portfolio Hub | Copyright © 2023</footer>
     )
 }

@@ -16,8 +16,8 @@ export default function App() {
             <p style={{marginTop: 35}}>Portfolio Hub</p>
           </div>
         </section>
-        <section className={`flex`}>
-          Section 2
+        <section className={`aboutMeSection flex alignCenter justifyCenter`}>
+          About Me
         </section>
       </main>
       <Footer />
