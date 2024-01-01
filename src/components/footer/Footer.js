@@ -14,6 +14,6 @@ export default function Footer() {
     }, [year]) // Whatever variables you put in this array will cause the useeffect to run again
 
     return (
-        <footer>Portfolio Hub | Copyright © {year}</footer>
+        <footer>Portfolio Hub | plutocoding@gmail.com | Copyright © {year}</footer>
     )
 }

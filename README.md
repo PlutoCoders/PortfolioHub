@@ -1,6 +1,9 @@
 # PortfolioHub
 Using React to create a portfolio website
 
+## Link to Deployed Page
+ plutoportfoliohub.netlify.app/ 
+
 ### Steps to Creating the Project
 - make sure you have node installed (check with node -v)
 - npm init -y (the following command does this automatically though, so its not neccesary)
@@ -15,8 +18,7 @@ Using React to create a portfolio website
 
 
 
-
-
+<!-- Random Creating React App info -->
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

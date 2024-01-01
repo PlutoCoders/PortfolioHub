@@ -1,7 +1,7 @@
 import Header from '../../components/header/Header';
 import Footer from '../../components/footer/Footer';
 import Project from '../../components/project/Project';
-
+// Add a featured project section that will display above the recent github projects, and it can have extra settings for custom images
 export default function Portfolio({logo, projects}) {
     return (
         <>
@@ -23,7 +23,6 @@ export default function Portfolio({logo, projects}) {
                                         id={projectIndex + 1}
                                         key={projectIndex} 
                                         project={project} 
-                                        className={`ProjectCustomClass`} 
                                     />
                         }) : <div className={`project flex alignCenter justifyCenter flexColumn w100`}>No Projects Found</div>}
                     </div>

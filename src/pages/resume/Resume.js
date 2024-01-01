@@ -14,16 +14,9 @@ export default function Resume({logo}) {
                 </section>
                 <section id={`resume`} className={`resumeContentSection flex alignCenter justifyCenter flexColumn`} style={{padding: 15}}>
                     <h2>Resume</h2>
-                    <p>
-                        This HTML file is a template.
-                        If you open it directly in the browser, you will see an empty page.
-
-                        You can add webfonts, meta tags, or analytics to this file.
-                        The build step will place the bundled scripts into the tag.
-
-                        To begin the development, run `npm start` or `yarn start`.
-                        To create a production bundle, use `npm run build` or `yarn build`.
-                    </p>
+                    {/* set target={'_blank'} to open a link in a new tab*/}
+                    {/* use download attribute to initiate a download of the connected asset. (pdf) */}
+                    <a target={`_blank`} className={`topic`} style={{padding: `5px 15px`}} href={`./Resume.pdf`} download={`resume.pdf`}>Click to view and Download Resume</a>
                 </section>
             </main>
             <Footer />
