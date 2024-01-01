@@ -114,7 +114,7 @@ section {
   background-size: cover !important;
   background-position: 50% 70% !important;
   background-repeat: no-repeat !important;
-  background: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, white), url(http://localhost:3000/static/media/pluto_background.8d10de451e85c7b022bd.png);
+  background: linear-gradient(transparent, transparent, transparent, transparent, transparent, transparent, transparent, white), url(/public/pluto_background.png);
 }
 
 .App {

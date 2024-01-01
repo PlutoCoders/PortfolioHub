@@ -20,6 +20,8 @@ export const getGithubData = async () => {
         const { name, html_url, created_at, owner, topics, license, updated_at, deployments_url, language, homepage, description } = repo;
         const filteredRepo = { name, owner, url: html_url, topics, date: created_at, license, updated: updated_at, homepage, language, deployment: deployments_url, description };
         repositories.push(filteredRepo);
+        // Make sure to return something inside the end of a .map
+        return filteredRepo;
       });
   
       let rawGithubData = {

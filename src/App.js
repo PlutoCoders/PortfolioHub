@@ -1,9 +1,9 @@
 import './App.css';
 import logo from './logo.svg';
-import { useState } from 'react';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Resume from './pages/resume/Resume';
+import { useEffect, useState } from 'react';
 import Contact from './pages/contact/Contact';
 import Portfolio from './pages/portfolio/Portfolio';
 // Use line 10 when you want do a fresh github api call, and comment switch project/setProhect import
@@ -15,6 +15,12 @@ export default function App() {
   // Store things in useState that you want to access across your application (or things that update)
   // let [projects, setProjects] = useState(getGithubData());
   let [projects, setProjects] = useState(projectsUsedAcrossApplication);
+
+  useEffect(() => {
+    if (projects.length === 0) {
+      setProjects(projectsUsedAcrossApplication);
+    }
+  }, [projects])
   
   return (
     <div className="App">
