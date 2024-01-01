@@ -17,7 +17,14 @@ export default function Portfolio({logo, projects}) {
                     <h2>Projects</h2>
                     <div className={`projects flex justifySpaceBetween gap15`}>
                         {projects && projects.length > 0 ? projects.map((project, projectIndex) => {
-                            return <Project key={projectIndex} project={project} />
+                            // This is where you create the props, which will be used inside of the actual component.
+                            // You can also put functions, ternarny statements, etc within the prop components
+                            return <Project 
+                                        id={projectIndex + 1}
+                                        key={projectIndex} 
+                                        project={project} 
+                                        className={`ProjectCustomClass`} 
+                                    />
                         }) : <div className={`project flex alignCenter justifyCenter flexColumn w100`}>No Projects Found</div>}
                     </div>
                 </section>

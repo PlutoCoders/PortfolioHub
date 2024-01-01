@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 export default function Header() {
@@ -14,19 +15,36 @@ export default function Header() {
     return (
         <header className={`header flex alignCenter justifySpaceBetween`}>
             <div className={`column headerColumn columnLeft flex alignCenter gap5`}>
-                <a className={`flex alignCenter gap5 mainColorLink`} href={`/`}>
+                {/* You can still use class/id names inside the link tag because the React Link tag automatically includes an a tag. */}
+                <Link className={`flex alignCenter gap5 mainColorLink`} to={`/`}>
                     <h1>Portfolio Hub</h1>
                     <span style={{color: `white`}}>- by Plutocoders</span>
-                </a>
+                </Link>
+                {/* <a className={`flex alignCenter gap5 mainColorLink`} href={`/`}>
+                    <h1>Portfolio Hub</h1>
+                    <span style={{color: `white`}}>- by Plutocoders</span>
+                </a> */}
             </div>
             <div className={`column headerColumn columnRight`}>
                 <nav>
                     <ul className={`navigationList flex gap15`}>
-                        {pageName !== `/` && <li><a href={`/`}>Home</a></li>}
-                        <li><a href={`/about`}>About Me</a></li>
-                        <li><a href={`/portfolio`}>Portfolio</a></li>
-                        <li><a href={`/resume`}>Resume</a></li>
-                        <li><a href={`/contact`}>Contact</a></li>
+                        {/* The a href tags won't work with a deployed version. React router DOM reccomends using their custom link component which will wrap the a tags in the link component. */}
+                        {/* Newer versions of React Router DOM dont need an <a> tag inside the <Link> anymore */}
+                        {pageName !== `/` && <li>
+                            <Link to={`/`}>Home</Link>
+                        </li>}
+                        <li>
+                            <Link to={`/about`}>About Me</Link>
+                        </li>
+                        <li>
+                            <Link to={`/portfolio`}>Portfolio</Link>
+                        </li>
+                        <li>
+                            <Link to={`/resume`}>Resume</Link>
+                        </li>
+                        <li>
+                            <Link to={`/contact`}>Contact</Link>
+                        </li>
                     </ul>
                 </nav>
             </div>
