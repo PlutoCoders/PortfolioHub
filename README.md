@@ -4,6 +4,9 @@ Using React to create a portfolio website
 ## Link to Deployed Page
  plutoportfoliohub.netlify.app/ 
 
+## Link to Repo
+https://github.com/PlutoCoders/PortfolioHub
+
 ### Steps to Creating the Project
 - make sure you have node installed (check with node -v)
 - npm init -y (the following command does this automatically though, so its not neccesary)
@@ -14,6 +17,14 @@ Using React to create a portfolio website
 - npm start (to start the application)
 - ctrl click the local host link such as: "http://localhost:3000"
 - your default app will be running in the browser
+- When its time to deplot, look up netlify. 
+- Make an account and sign up/in with github for a streamlined process. Then deploy from the project repo.
+
+### Credits
+- I'd like to thank our tutor Rakib (strawhat) for being the best tutor ever! Thanks so much for helping us navigate and survive this course!
+- I did this with my brother, who is also always helping with everything he can. Thank bro!
+- Special thanks to material from the course
+- Special thanks to ai assistance and stackOverflow when at hurdles!
 
 
 
