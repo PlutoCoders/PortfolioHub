@@ -17,6 +17,12 @@ export default function Portfolio({logo, projects}) {
                     <h2>Projects</h2>
                     <div className={`projects flex justifySpaceBetween gap15`}>
                         {projects && projects.length > 0 ? projects.map((project, projectIndex) => {
+                            // When mapping over an array, you can modify each item within the array.
+                            // In this case, we are checking if each project has a defined image property.
+                            // If it does not, give it the placeholder image.
+                            if (!project.image) {
+                                project.image = `/placeholderImage.png`;
+                            }
                             // This is where you create the props, which will be used inside of the actual component.
                             // You can also put functions, ternarny statements, etc within the prop components
                             return <Project 

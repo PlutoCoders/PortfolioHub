@@ -40,7 +40,7 @@ export const getGithubData = async () => {
     return projects;
 }
 
-export const githubRaw = [
+export const cachedGitHubProjects = [
     {
         "name": "PortfolioHub",
         "owner": {
@@ -738,11 +738,12 @@ export const githubRaw = [
     }
 ];
 
-export const customProjects = [
+export const customFeaturedProjects = [
     {
         url: `#`,
-        name: `Project 1`,
+        name: `EventCreator`,
         description: `Project 1`,
+        image: `/eventcreator.png`,
     },
     {
         url: `#`,
@@ -757,4 +758,9 @@ export const customProjects = [
     },
 ];
 
-export const projectsUsedAcrossApplication = githubRaw;
+// Switch out what the variable is equal to.
+// As long as it is equal to an array of project objects.
+// This will change what we are displaying. (from customProjects or the cachedGitHubProjects).
+// Use the spread operator to add all the project objects into the displayed array of projects. Otherwise you will have nested arrays that will break your display.
+// Spread operator says: go inside this variable, and give me all the content. If its an array, you get all the array values, if its an object, you get all the key/value pairs
+export const projectsUsedAcrossApplication = [...customFeaturedProjects, ...cachedGitHubProjects];

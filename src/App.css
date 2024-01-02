@@ -2,6 +2,7 @@
   --bg: #282c34;
   --main: #21DDF7;
   --bgLight: #586a8e;
+  --cardShadow: 0 0 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 header, footer {
@@ -98,9 +99,11 @@ section {
 
 .project {
   width: 31%;
+  overflow: hidden;
   min-height: 150px;
+  border-radius: 15px;
   padding-bottom: 15px;
-  border: 1px solid black;
+  box-shadow: var(--cardShadow);
 }
 
 .topic {
