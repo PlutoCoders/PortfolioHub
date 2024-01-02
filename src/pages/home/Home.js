@@ -13,7 +13,7 @@ export default function Home({logo}) {
                     </div>
                 </section>
                 <section id={`aboutMe`} className={`aboutMeSection flex alignCenter justifyCenter`}>
-                    About Me
+                    Click the links in the nav bar above to traverse the website! Featured portfolio projects will be added here later.
                 </section>
             </main>
             <Footer />

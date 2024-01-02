@@ -758,21 +758,26 @@ export const cachedGitHubProjects = [
 
 export const customFeaturedProjects = [
     {
-        url: `#`,
+        url: `https://eventcreatorproject2-ccc7e1fe4142.herokuapp.com/`,
         name: `EventCreator`,
-        description: `Project 1`,
+        description: `Create your own events and view other events`,
         image: `/eventcreator.png`,
+        topics: [`javaScript`, `SQL`]
     },
     {
-        url: `#`,
-        name: `Project 2`,
-        description: `Project 2`,
-        topics: [`Topic 1`, `Topic 2`],
+        url: `https://github.com/PlutoCoders/PortfolioHub`,
+        name: `Portfolio Hub`,
+        description: `A personal portfolio website!`,
+        image: `/portfoliohub.png`,
+        topics: [`React`,'javaScript'],
     },
     {
-        url: `#`,
-        name: `Project 3`,
-        description: `Project 3`,
+        url: `https://brandonerivera.github.io/frontendprobject-1/`,
+        name: `Marvel Favorites`,
+        description: `Search for posters from marvel comics and movies, add some to your favorites!`,
+        image: `/marvelposters.png`,
+        topics: [`html`,`css`,`javaScript`,`express`],
+
     },
 ];
 
