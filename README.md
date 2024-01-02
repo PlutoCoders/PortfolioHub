@@ -20,12 +20,27 @@ https://github.com/PlutoCoders/PortfolioHub
 - When its time to deplot, look up netlify. 
 - Make an account and sign up/in with github for a streamlined process. Then deploy from the project repo.
 
-### Credits
+## Credits
 - I'd like to thank our tutor Rakib (strawhat) for being the best tutor ever! Thanks so much for helping us navigate and survive this course!
 - I did this with my brother, who is also always helping with everything he can. Thank bro!
 - Special thanks to material from the course
 - Special thanks to ai assistance and stackOverflow when at hurdles!
 
+### ToDo
+- Mobile Responsiveness
+- Better Styling of home page graphics
+- Scroll Transition and better background
+- Animated Gifs/graphics of stars, planets, etc to make the site feel more alive
+- Improved about me/resume section with polished and memorable styling
+- Add featured portfolio projects to the home page.
+- Different pages can have different spinning logos and background/planets specific to the page
+- Contact Form Improvements
+- Improved Footer styling
+- Footer "back to top" button
+- Navbar page button signals what page the user is on
+- Last updated date-time display in home page?
+- Calming spacey music?
+- Portfolio sections: Recent Github, Featured Projects, music, roblox games, etc (more organized,expansive, and easy to navigate structure for different portfolios)
 
 
 
